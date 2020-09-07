@@ -27,3 +27,18 @@ To build, run the build command for a specific environment. For example, the fol
 ```
 npm start build.prod
 ```
+
+## updates
+
+rm -rf node_modules
+nvm install 4.0.0
+
+config.ts:
+export const VERSION_NPM = '2.14.7';
+export const VERSION_NODE = '4.0.0';
+
+npm -v
+
+// "karma-phantomjs2-launcher": "^0.3.2",
+
+
