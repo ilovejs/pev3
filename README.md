@@ -28,17 +28,24 @@ To build, run the build command for a specific environment. For example, the fol
 npm start build.prod
 ```
 
-## updates
+## Updates (2020)
 
 rm -rf node_modules
 nvm install 4.0.0
+npm -v
 
-config.ts:
+- config.ts:
 export const VERSION_NPM = '2.14.7';
 export const VERSION_NODE = '4.0.0';
 
-npm -v
+- remove from package.json
 
-// "karma-phantomjs2-launcher": "^0.3.2",
+   "karma-phantomjs2-launcher": "^0.3.2",
 
-
+```bash
+git remote remove origin
+git remote add origin git@github.com:ilovejs/pev3.git
+git branch --set-upstream-to=origin/master master
+git pull
+git push origin master --force
+```
